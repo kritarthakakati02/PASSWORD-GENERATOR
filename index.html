@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h2>Password Generator</h2>
+        <span class="copy" id="copyBtn">📋</span>
+    </div>
+
+    <div class="password-display" id="password">Click Generate</div>
+
+    <div class="length-box">
+        <span>Character Length</span>
+        <span id="lengthValue">10</span>
+    </div>
+
+    <input type="range" min="4" max="32" value="10" id="lengthSlider">
+
+    <!-- Alphabets -->
+    <div class="option">
+        <span>Alphabets</span>
+        <label class="switch">
+            <input type="checkbox" id="alphabets" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- Numbers -->
+    <div class="option">
+        <span>Numbers</span>
+        <label class="switch">
+            <input type="checkbox" id="numbers">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- Symbols -->
+    <div class="option">
+        <span>Symbols</span>
+        <label class="switch">
+            <input type="checkbox" id="symbols">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="strength">
+        <span>STRENGTH</span>
+        <span id="strengthValue">----</span>
+    </div>
+
+    <button id="generateBtn">GENERATE →</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
